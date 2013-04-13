@@ -13,11 +13,11 @@ With this plugin, you can use a your posts' ranking rated by the number of Faceb
 
 == Description ==
 
-<h4>Features</h4>
-<ul>
-	<li><strong>Making a ranking rated by the number of Facebook like.</strong> You can make and use a ranking rated by the number of Facebook like width this plugin. It's good for visitors.</li>
-	<li><strong>Setting in detail.</strong> You can decide how often it will update the raning information and how many posts it will check when it updates the information.</li>
-</ul>
+Features
+
+・Making a ranking rated by the number of Facebook like. You can make and use a ranking rated by the number of Facebook like width this plugin. It's good for visitors.
+
+・Setting in detail. You can decide how often it will update the raning information and how many posts it will check when it updates the information.
 
 == Installation ==
 
