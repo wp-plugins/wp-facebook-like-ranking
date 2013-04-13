@@ -36,7 +36,7 @@ ex)
 
 `get_like_ranking (10, false, array(20, 20))`
 
-It shows 10 posts and 20px × 20px thumbnail picture widthout expressing like count.
+It shows 10 posts and 20px × 20px thumbnail picture without expressing like count.
 
 
 == Frequently asked questions ==
