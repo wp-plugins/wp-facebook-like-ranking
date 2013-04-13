@@ -30,11 +30,11 @@ That's it!
 
 ・more about function
 
-get_like_ranking (int $post_number = 5, bool $post_count = true, $thumbnail_size = null)
+`get_like_ranking (int $post_number = 5, bool $post_count = true, $thumbnail_size = null)`
 
 ex)
 
-get_like_ranking (10, false, array(20, 20))
+`get_like_ranking (10, false, array(20, 20))`
 
 It shows 10 posts and 20px × 20px thumbnail picture widthout expressing like count.
 
