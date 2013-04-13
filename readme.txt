@@ -27,7 +27,7 @@ Features
 4. Configure items through the 'Settings->WP Facebook Like Ranking' menu in WordPres
 5. Place `<?php if (function_exists('get_like_ranking')) get_like_ranking (); ?>` in your templates
 
-That' it!
+That's it!
 
 == Frequently asked questions ==
 
