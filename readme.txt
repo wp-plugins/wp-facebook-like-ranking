@@ -30,7 +30,7 @@ That's it!
 
 ・more about function
 
-`get_like_ranking (int $post_number = 5, bool $post_count = true, $thumbnail_size = null)`
+`get_like_ranking (int $post_number = 5, bool $post_count = true, array $thumbnail_size = null)`
 
 ex)
 
