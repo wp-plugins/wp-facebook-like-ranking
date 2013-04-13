@@ -29,6 +29,15 @@ Features
 
 That's it!
 
+-- more about function --
+get_like_ranking (int $post_number = 5, bool $post_count = true, $thumbnail_size = null)
+
+ex)
+get_like_ranking (10, false, array(20, 20))
+
+It shows 10 posts and 20×20 thumbnail picture widthout expressing like count.
+
+
 == Frequently asked questions ==
 
 = I need help with your plugin! What should I do? =
