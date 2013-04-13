@@ -21,12 +21,11 @@ Features
 
 == Installation ==
 
-1. Download the plugin and extract its contents.
-2. Upload `wp-facebook-like-ranking` to the `/wp-content/plugins/` directory
-3. Activate the plugin through the 'Plugins' menu in WordPress
-4. Configure items through the 'Settings->WP Facebook Like Ranking' menu in WordPres
-5. Place `<?php if (function_exists('get_like_ranking')) get_like_ranking (); ?>` in your templates
-
+1. Download the plugin and extract its contents. / プラグインをダウンロード、解凍します。
+2. Upload `wp-facebook-like-ranking` to the `/wp-content/plugins/` directory. / `/wp-content/plugins/`ディレクトリにプラグインをアップロードします。
+3. Activate the plugin through the 'Plugins' menu in WordPress. / プラグインを有効化します。
+4. Configure items through the 'Settings->WP Facebook Like Ranking' menu in WordPres. / 'Settings->WP Facebook Like Ranking'で細かい設定を行います。
+5. Place `<?php if (function_exists('get_like_ranking')) get_like_ranking (); ?>` in your templates. / `<?php if (function_exists('get_like_ranking')) get_like_ranking (); ?>`を、ランキングを出したいところにコピペします。
 That's it!
 
 ・more about function
