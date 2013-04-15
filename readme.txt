@@ -53,11 +53,11 @@ It shows 10 posts and 20px × 20px thumbnail picture without expressing like cou
 
 == Changelog ==
 
-= 1.0 =
-* Public release
-
 = 1.01 =
 * Fix bug
+
+= 1.0 =
+* Public release
 
 == Upgrade notice ==
 
