@@ -2,7 +2,7 @@
 Contributors: MankinJp
 Donate link: 
 Tags: facebook, like, ranking, popular
-Requires at least: 
+Requires at least: 2.8
 Tested up to: 3.5.1
 Stable tag: 1.01
 License: GPLv2 or later
