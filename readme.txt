@@ -9,7 +9,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 With this plugin, you can use a your posts' ranking rated by the number of Facebook like./
-ブログ内記事の、Facebookのいいね数に基づいたランキングを生成、表示するWordPressプラグインです。
+Facebookのいいね数に基づいたランキングを生成プラグイン。
 
 == Description ==
 
