@@ -4,7 +4,7 @@ Donate link:
 Tags: facebook, like, ranking, popular
 Requires at least: 2.8
 Tested up to: 3.5.1
-Stable tag: 1.02
+Stable tag: 1.03
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,8 +52,11 @@ It shows 10 posts and 20px × 20px thumbnail picture without expressing like cou
 
 == Changelog ==
 
+= 1.03 =
+* Fix bug
+
 = 1.02 =
-* Make thumbnail Image clickable
+* Make thumbnail image clickable
 
 = 1.01 =
 * Fix bug
