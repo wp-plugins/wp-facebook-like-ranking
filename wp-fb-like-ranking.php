@@ -4,7 +4,7 @@ Plugin Name: WP Facebook Like Ranking
 Plugin URI: http://wordpress.org/extend/plugins/wp-facebook-like-ranking/
 Description: facebookのいいね数に応じた、ブログ記事のランキングを生成します。
 Author: Taishi Kato
-Version: 1.01
+Version: 1.02
 Author URI: http://taishikato.com/blog/
 */
 
@@ -137,13 +137,13 @@ function get_like_ranking ($number = 5, $like_count = true, $thumbnail_size = nu
         if ($thumbnail_size == null) {
           echo '<li><a href="'.$post->guid.'">'.esc_html($post->post_title).'</a> <span class="wp-fb-like-ranking-count">'.$likeNumberToPost.'</span></li>';
         } else {
-          echo '<li>'.get_the_post_thumbnail( $post->ID, $thumbnail_size ).'<a href="'.$post->guid.'">'.esc_html($post->post_title).'</a> <span class="wp-fb-like-ranking-count">'.$likeNumberToPost.'</span></li>';
+          echo '<li><a href="'.$post->guid.'">'.get_the_post_thumbnail( $post->ID, $thumbnail_size ).esc_html($post->post_title).'</a> <span class="wp-fb-like-ranking-count">'.$likeNumberToPost.'</span></li>';
         }
       } else {
         if ($thumbnail_size == null) {
           echo '<li><a href="'.$post->guid.'">'.esc_html($post->post_title).'</a></li>';
         } else {
-          echo '<li>'.get_the_post_thumbnail( $post->ID, $thumbnail_size ).'<a href="'.$post->guid.'">'.esc_html($post->post_title).'</a></li>';
+          echo '<li><a href="'.$post->guid.'">'.get_the_post_thumbnail( $post->ID, $thumbnail_size ).esc_html($post->post_title).'</a></li>';
         }
       }
     }
