@@ -1,7 +1,7 @@
 === WordPress Facebook Like Ranking ===
 Contributors: MankinJp
 Donate link: 
-Tags: facebook, like, ranking, popular
+Tags: plugin, facebook, like, ranking, popular
 Requires at least: 2.8
 Tested up to: 3.5.1
 Stable tag: 1.04
