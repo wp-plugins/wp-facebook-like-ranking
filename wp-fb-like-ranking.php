@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/extend/plugins/wp-facebook-like-ranking/
 Description: facebookのいいね数に応じた、ブログ記事のランキングを生成します。
 Author: Taishi Kato
 Version: 1.04
-Author URI: http://taishikato.com/blog/
+Author URI: http://taishikato.com/
 */
 
 $wplrank = new WpLikeRanking();
