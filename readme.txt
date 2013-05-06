@@ -2,9 +2,9 @@
 Contributors: MankinJp
 Donate link: 
 Tags: plugin, facebook, like, ranking, popular
-Requires at least: 2.8
+Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 1.04
+Stable tag: 1.05
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -53,6 +53,9 @@ It shows 10 posts and 20px × 20px thumbnail picture without expressing like cou
 
 
 == Changelog ==
+
+= 1.05 = 
+* Able to recreate the ranking
 
 = 1.04 =
 * Change how to create ranking
