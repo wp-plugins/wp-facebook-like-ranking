@@ -4,7 +4,7 @@ Donate link:
 Tags: plugin, facebook, like, ranking, popular
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 1.05
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,16 +29,21 @@ With this plugin, you can use a your posts' ranking rated by the number of Faceb
 
 That's it!
 
-・more about function
+・more about a function
 
-`get_like_ranking (int $post_number = 5, bool $post_count = true, array $thumbnail_size = null)`
+`get_like_ranking (int $post_number = 5, bool $post_count = true, array $thumbnail_size = null, $category_id)`
 
-ex)
+ex1)
 
 `get_like_ranking (10, false, array(20, 20))`
 
 It shows 10 posts and 20px × 20px thumbnail picture without expressing like count.
 
+ex2)
+
+`get_like_ranking (10, false, null, 1)`
+
+It shows 10 posts of a category which has id 1.
 
 == Frequently asked questions ==
 
