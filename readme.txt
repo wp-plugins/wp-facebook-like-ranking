@@ -54,6 +54,9 @@ It shows 10 posts and 20px × 20px thumbnail picture without expressing like cou
 
 == Changelog ==
 
+= 1.1 = 
+* Add a category filter.
+
 = 1.05 = 
 * Able to recreate the ranking
 
