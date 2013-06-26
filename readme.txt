@@ -18,6 +18,8 @@ With this plugin, you can use a your posts' ranking rated by the number of Faceb
 
 * **Setting in detail**. You can decide how often it will update the raning information and how many posts it will check when it updates the information.
 
+* **Category filter**. You can create rankings which have only specific category posts.
+
 == Installation ==
 
 1. Download the plugin and extract its contents. / プラグインをダウンロード、解凍します。
