@@ -57,6 +57,7 @@ It shows 10 posts of a category which has id 1.
 
 1. WordPress Facebook Like Ranking on theme's sidebar.
 2. WordPress Facebook Like Ranking Stats panel.
+3. A example of using WordPress Facebook Like Ranking.
 
 
 == Changelog ==
