@@ -61,6 +61,8 @@ It shows 10 posts of a category which has id 1.
 
 == Changelog ==
 
+= 1.12 =
+* Adding title properties to a elements.
 = 1.11 =
 * Just add a title property
 = 1.1 = 
