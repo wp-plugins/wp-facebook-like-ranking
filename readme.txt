@@ -88,4 +88,4 @@ It shows 10 posts of a category which has id 1.
 
 == Upgrade notice ==
 
-You better use Wordpress 2.8 at least.
+You better use Wordpress 3.1 at least.
