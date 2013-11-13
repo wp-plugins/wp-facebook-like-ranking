@@ -40,6 +40,6 @@
 				</td>
 			</tr>
 		</table>
-		<input type="submit" class="button-primary" value="設定を更新" />
+		<input type="submit" class="button-primary" value="設定を更新(Save)" />
 	</form>
 </div>
