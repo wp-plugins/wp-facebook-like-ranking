@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: WP Facebook Like Ranking
+
 Plugin URI: http://wordpress.org/extend/plugins/wp-facebook-like-ranking/
 Description: you can use a your posts' ranking rated by the number of Facebook like./facebookのいいね数に応じた、ブログ記事のランキングを生成します。
 Author: Taishi Kato
@@ -161,7 +161,7 @@ function get_like_ranking ($number = 5, $like_count = true, $thumbnail_size = nu
       }
     }
   }
-  if ($i == 0) echo 'いいねを押されている記事はまだありません';
+  if ($i == 0) echo 'No post liked.';
   echo '</ul>';
   wp_reset_query();
 }
