@@ -61,7 +61,7 @@ It shows 10 posts of a category which has id 1.
 
 == Changelog ==
 = 1.122 =
-Tiny update
+* Tiny update
 = 1.121 =
 * Tiny updates
 = 1.12 =
