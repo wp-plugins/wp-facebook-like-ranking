@@ -3,8 +3,8 @@ Contributors: MankinJp
 Donate link: 
 Tags: plugin, facebook, like, ranking, popular
 Requires at least: 3.0
-Tested up to: 3.6
-Stable tag: 1.121
+Tested up to: 3.7.1
+Stable tag: 1.122
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,6 +60,8 @@ It shows 10 posts of a category which has id 1.
 
 
 == Changelog ==
+= 1.122 =
+Tiny update
 = 1.121 =
 * Tiny updates
 = 1.12 =
