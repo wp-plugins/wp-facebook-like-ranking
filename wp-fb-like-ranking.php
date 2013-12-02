@@ -5,6 +5,8 @@ Description: you can use a your posts' ranking rated by the number of Facebook l
 Author: Taishi Kato
 Version:1.13
 Author URI: http://taishikato.com/
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 $wplrank = new WpLikeRanking();
