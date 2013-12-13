@@ -73,7 +73,7 @@ It shows 10 posts of a category which has id 1.
 
 
 == Changelog ==
-= 1.13 =
+= 1.2 =
 * Multilingualization (Japanese, English)
 = 1.13 =
 * Tiny update
