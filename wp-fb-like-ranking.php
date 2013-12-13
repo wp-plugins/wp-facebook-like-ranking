@@ -1,13 +1,13 @@
 <?php
 /*
-Plugin Name: WordPress Facebook Like Ranking
+Plugin Name: WP Facebook Like Ranking
 Plugin URI: http://wordpress.org/extend/plugins/wp-facebook-like-ranking/
 Description: you can use a your posts' ranking rated by the number of Facebook like./facebookのいいね数に応じた、ブログ記事のランキングを生成します。
-Version:1.13
 Author: Taishi Kato
+Version: 1.121
+Text Domain: wp-facebook-like-ranking
+Domain Path: /languages/
 Author URI: http://taishikato.com/
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 $wplrank = new WpLikeRanking();
@@ -80,6 +80,8 @@ class WpLikeRanking {
     }
   }
 }
+
+load_plugin_textdomain('wp-facebook-like-ranking', false, dirname(plugin_basename(__FILE__)).'/languages/');
 
 add_action('admin_menu', 'wp_fb_like_ranking_admin_menu');
 function wp_fb_like_ranking_admin_menu () {
@@ -163,7 +165,7 @@ function get_like_ranking ($number = 5, $like_count = true, $thumbnail_size = nu
       }
     }
   }
-  if ($i == 0) echo 'No post liked.';
+  if ($i == 0) _e('No post liked.', 'wp-facebook-like-ranking');
   echo '</ul>';
   wp_reset_query();
 }
