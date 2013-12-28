@@ -31,8 +31,8 @@ With this plugin, you can use a your posts' ranking rated by the number of Faceb
 3. Activate the plugin through the 'Plugins' menu in WordPress.
 4. Create a ranking by pushing a create button through the 'Settings->WP Facebook Like Ranking' menu in WordPres.
 5. Configure items.
-6. 2 ways
-・As a widget:Go to the widget page and put on this widget.
+6. 2 ways<br />
+・As a widget:Go to the widget page and put on this widget.<br />
 ・With a function:Place `<?php if (function_exists('get_like_ranking')) get_like_ranking (); ?>` in your templates.
 
 That's it!
@@ -43,8 +43,8 @@ That's it!
 3. プラグインを有効化します。
 4. 'Settings->WP Facebook Like Ranking'でCreateボタンを押して最初のランキングを生成します。
 5. 'Settings->WP Facebook Like Ranking'で細かい設定を行います。
-6. 最後は、2通りのやり方があります。
-ウィジェットとして使う場合：ウィジェットページで設定できます。
+6. 最後は、2通りのやり方があります。<br />
+ウィジェットとして使う場合：ウィジェットページで設定できます。<br />
 関数を直接書く場合：`<?php if (function_exists('get_like_ranking')) get_like_ranking (); ?>`を、ランキングを出したいところにコピペします。
 
 完了！
