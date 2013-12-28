@@ -14,7 +14,7 @@ With this plugin, you can use a your posts' ranking rated by the number of Faceb
 
 = Features =
 
-* **A HAPPY NEW YEAR!!
+* **A HAPPY NEW YEAR!!**
 
 * **Making a ranking rated by the number of Facebook like**. You can make and use a ranking rated by the number of Facebook like width this plugin. It's good for visitors.
 
