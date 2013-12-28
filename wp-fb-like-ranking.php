@@ -4,17 +4,19 @@ Plugin Name: WP Facebook Like Ranking
 Plugin URI: http://wordpress.org/extend/plugins/wp-facebook-like-ranking/
 Description: you can use a your posts' ranking rated by the number of Facebook like./facebookのいいね数に応じた、ブログ記事のランキングを生成します。
 Author: Taishi Kato
-Version: 1.2.0
+Version: 1.3.0
 Text Domain: wp-facebook-like-ranking
 Domain Path: /languages/
 Author URI: http://taishikato.com/
 */
 
+require_once('widget.php');
+
 $wplrank = new WpLikeRanking();
 
 class WpLikeRanking {
 
-  public function __construct () {
+public function __construct () {
     if (function_exists('register_deactivation_hook')) {
       // When This Plugin Become Invalid
       register_deactivation_hook(__FILE__, array(&$this, 'delete_likecount_meta'));
@@ -29,7 +31,7 @@ class WpLikeRanking {
     }
     // add action
     add_action('wp_fb_like_ranking_event', array(&$this, 'update_fb_like'));
-  }
+}
 
   function add_userblog_meta ( $new_status, $old_status, $post ) {
     if ($new_status == 'publish' AND $old_status != 'publish') {
@@ -119,6 +121,13 @@ function set_likecount_meta () {
     }
   }
 
+function styleCss () {
+  $style_url = plugins_url('wp-fb-like-ranlking.css', __FILE__);
+  wp_enqueue_style( 'wp-fb-like-ranking-style', $style_url, false, '1' );
+}
+add_action('wp_print_styles','styleCss');
+
+
 // 管理画面設定
 function wp_fb_like_ranking_edit_setting () {
   if (isset($_POST['create'])) {
@@ -136,31 +145,35 @@ function wp_fb_like_ranking_edit_setting () {
   include 'setting.html.php';
 }
 
-function get_like_ranking ($number = 5, $like_count = true, $thumbnail_size = null, $category_id = null) {
+function get_like_ranking ($number = 5, $like_count = true, $thumbnail_size = null, $category_id = null, $shorten_words = null) {
   $number = esc_html($number);
   if(!empty($category_id)) {
     $rank = get_posts('meta_key=wp_fb_like_count&numberposts='.$number.'&orderby=meta_value_num&category='.$category_id);
   } else {
     $rank = get_posts('meta_key=wp_fb_like_count&numberposts='.$number.'&orderby=meta_value_num');
   }
-  echo '<ul class="wp-fb-like-ranking">';
+  echo '<ul class="wp-fb-like-ranking clearfix">';
   $i = 0;
   foreach($rank as $post) {
     $likeNumberToPost = get_post_meta($post->ID, 'wp_fb_like_count', true);
     if ($likeNumberToPost != 0) {
       $i++;
       $permalinkUrl = get_permalink ($post->ID);
+      $post_title = $post->post_title;
       if ($like_count == true) {
+        if(isset($shorten_words)) {
+          $post_title = mb_substr($post_title, 0, $shorten_words) . '...';
+        }
         if ($thumbnail_size == null) {
-          echo '<li><a href="'.$permalinkUrl.'" title="'.$post->post_title.'">'.esc_html($post->post_title).'</a> <span class="wp-fb-like-ranking-count">'.$likeNumberToPost.'</span></li>';
+          echo '<li><a href="'.$permalinkUrl.'" title="'.$post->post_title.'">'.esc_html($post_title).'</a> <span class="wp-fb-like-ranking-count">'.$likeNumberToPost.'</span></li>';
         } else {
-          echo '<li><a href="'.$permalinkUrl.'" title="'.$post->post_title.'">'.get_the_post_thumbnail( $post->ID, $thumbnail_size ).esc_html($post->post_title).'</a> <span class="wp-fb-like-ranking-count">'.$likeNumberToPost.'</span></li>';
+          echo '<li><a href="'.$permalinkUrl.'" title="'.$post->post_title.'">'.get_the_post_thumbnail($post->ID, $thumbnail_size, array('class' => 'wp-fb-like-ranking-thumb')).esc_html($post_title).'</a> <span class="wp-fb-like-ranking-count">'.$likeNumberToPost.'</span></li>';
         }
       } else {
         if ($thumbnail_size == null) {
-          echo '<li><a href="'.$permalinkUrl.'" title="'.$post->post_title.'">'.esc_html($post->post_title).'</a></li>';
+          echo '<li><a href="'.$permalinkUrl.'" title="'.$post->post_title.'">'.esc_html($post_title).'</a></li>';
         } else {
-          echo '<li><a href="'.$permalinkUrl.'" title="'.$post->post_title.'">'.get_the_post_thumbnail( $post->ID, $thumbnail_size ).esc_html($post->post_title).'</a></li>';
+          echo '<li><a href="'.$permalinkUrl.'" title="'.$post->post_title.'">'.get_the_post_thumbnail($post->ID, $thumbnail_size, array('class' => 'wp-fb-like-ranking-thumb')).esc_html($post_title).'</a></li>';
         }
       }
     }
